@@ -1,0 +1,5 @@
+
+Heroku tiene una variable de entorno llamada PORT
+el codigo al ver process.env.PORT asignara el puerto que me disponga Heroku
+
+
