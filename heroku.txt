@@ -2,4 +2,7 @@
 Heroku tiene una variable de entorno llamada PORT
 el codigo al ver process.env.PORT asignara el puerto que me disponga Heroku 
 
+ver console logs en Heroku CLI - siempre escucha en la termial
+$ heroku logs -n 1000 --tail
+
 

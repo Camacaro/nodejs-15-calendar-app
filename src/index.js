@@ -1,6 +1,7 @@
 import dotenv from 'dotenv'
 import express from 'express'
 import cors from 'cors'
+import path from 'path'
 import auth from './routes/auth';
 import events from './routes/events';
 import { dbConnection } from './database/config';
@@ -21,7 +22,8 @@ app.use(cors())
 app.use( express.json() );
 
 // Directorio Publico
-app.use( express.static('public') );
+const publicPath = path.resolve(__dirname, './public');
+app.use( express.static(publicPath) );
 
 // Rutas
 app.use( '/api/auth', auth )
