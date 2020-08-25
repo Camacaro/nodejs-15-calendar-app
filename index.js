@@ -2,7 +2,9 @@ import dotenv from 'dotenv'
 import express from 'express'
 import cors from 'cors'
 import auth from './routes/auth';
+import events from './routes/events';
 import { dbConnection } from './database/config';
+
 
 dotenv.config();
 
@@ -23,6 +25,7 @@ app.use( express.static('public') );
 
 // Rutas
 app.use( '/api/auth', auth )
+app.use( '/api/events', events )
 
 
 // Escuchar peticiones

@@ -2,7 +2,7 @@ import { Router } from 'express';
 import { check } from 'express-validator'
 import { crearUsuario, revalidarToken, loginUsuario } from '../controllers/auth';
 import { validarCampos } from '../middlewares/validar-campos';
-import { validarJWY } from '../helpers/validar-jwt';
+import { validarJWY } from '../middlewares/validar-jwt';
 
 /**
  * Rutas de Usuarios / Auth
