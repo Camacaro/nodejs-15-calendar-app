@@ -6,3 +6,6 @@ ver console logs en Heroku CLI - siempre escucha en la termial
 $ heroku logs -n 1000 --tail
 
 
+configurar variable de entorno
+$ heroku config:set DB_CNN=
+$ heroku config:set SECRET_JWT_SEED=
