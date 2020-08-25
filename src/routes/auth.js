@@ -32,6 +32,6 @@ router.post(
   loginUsuario
 )
 
-router.post('/renew', validarJWY, revalidarToken )
+router.get('/renew', validarJWY, revalidarToken )
 
 export default router;
